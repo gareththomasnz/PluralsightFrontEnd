@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html manifest="app.appcache">
+<head>
+    <title>Canvas Api</title>
+</head>
+
+<body>
+    
+    <h1>I'm Offline Enabled</h1>
+    <a href="audio.html">Audio Page</a>
+    
+    <h1 onclick="javascript:goBack()">Go Back</h1>
+    <h1 onclick="javascript:goForward()">Go Forward</h1>
+    <h1 onclick="javascript:addHistory()">Add History</h1>
+
+
+<canvas id="myCanvas" width="600" height="600"></canvas>
+<script>
+    
+    function goBack(){
+    window.history.go(-1);
+    }
+    function goForward(){
+        window.history.go(1);
+    }
+    function addHistory(){
+        window.history.pushState(undefined, "", "newState2");
+    }
+    window.addEventListener('load', draw);
+    function draw(){
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(10, 100, 30, 30);
+        ctx.fillStyle = 'red';
+        ctx.fillRect(100, 100, 30, 30);        
+    }
+    
+   
+</script>
+</body>
+</html>
