@@ -1,0 +1,57 @@
+primary-orange: #ED652E;
+primary-gray: #EBEBEB;
+
+h1 {
+  color: primary-orange;
+}
+div.content {
+  color: primary-orange;
+}
+.header {
+  background-color: primary-gray;
+}
+.footer {
+  background-color: primary-gray;
+}
+
+content-width: 780px;
+total-width: 1000px;
+div.content {
+  width: content-width;
+}
+div.secondary {
+  width: total-width - content-width;
+}
+
+.box {
+  mixin-border-radius(10px);
+}
+
+mixin-border-radius(radius) {
+  -webkit-border-radius: radius;
+  -moz-border-radius: radius;
+  -ms-border-radius: radius;
+  -o-border-radius: radius;
+  border-radius: radius;
+}
+
+.content {
+  color: #555;
+}
+.content span {
+  padding: 3px;
+}
+.content h3 {
+  margin-top: 2px;
+}
+
+.content {
+  color: #555;
+  span {
+    padding: 3px;
+  }
+  h3 {
+    margin-top: 2px;
+  }
+}
+}

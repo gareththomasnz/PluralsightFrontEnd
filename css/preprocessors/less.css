@@ -1,0 +1,15 @@
+.content-box {
+  background-color: #ebebeb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  width: 780px;
+}
+.content-box .header {
+  color: #ed652e;
+}
+.secondary {
+  width: 220px;
+}
